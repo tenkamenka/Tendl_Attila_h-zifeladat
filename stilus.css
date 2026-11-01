@@ -1,0 +1,150 @@
+main,
+header,
+footer,
+article,
+aside,
+nav {
+    margin: 10px;
+    border-radius: 10px;
+    color: brown;
+    font-family: monospace, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 300px;
+    grid-template-areas: "h h"
+        "n n"
+        "ar as"
+        "f f";
+    border-style: none;
+}
+
+header {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    background-image: url("szikla.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 1000px;
+    margin: auto;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav a {
+    color: brown;
+    text-decoration: none;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav ul li:hover a {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+aside {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: right;
+}
+
+aside ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: right;
+    border-radius: 10px;
+}
+
+aside ul li a {
+    color: brown;
+    text-decoration: none;
+}
+
+aside ul li {
+    padding: 10px;
+}
+
+aside ul li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+aside ul li:hover a {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+header {
+    grid-area: h
+}
+
+nav {
+    grid-area: n
+}
+
+article {
+    grid-area: ar
+}
+
+aside {
+    grid-area: as
+}
+
+footer {
+    grid-area: f
+}
+
+
+
+@media screen and (max-width:600pX) {
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "h"
+            "n"
+            "ar"
+            "as"
+            "f";
+    }
+}
