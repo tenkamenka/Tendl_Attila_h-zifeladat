@@ -188,4 +188,8 @@ footer {
             "as"
             "f";
     }
+
+    .kepek {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
