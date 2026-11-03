@@ -173,6 +173,39 @@ footer {
     box-sizing: border-box;
 }
 
+.kapcsolat {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.email {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 1px 5px;
+    line-height: 0.5;
+}
+
+.nev {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 1px 5px;
+    line-height: 0.5;
+}
+
+.uzenet {
+    grid-column: 1 / 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 1px 5px 100px 5px;
+    line-height: 0.5;
+}
+
+.kuldes {
+text-align: right;
+padding: 10px 0px 0px 0px;
+}
+
 @media screen and (max-width:600pX) {
     nav ul {
         grid-template-columns: 1fr;
