@@ -9,16 +9,6 @@ nav {
     color: brown;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 3fr 300px;
-    grid-template-areas: "h h"
-        "n n"
-        "ar as"
-        "f f";
-    border-style: none;
-}
-
 .main1 {
     display: grid;
     grid-template-columns: 3fr 300px;
@@ -99,7 +89,7 @@ article {
     border-radius: 10px;
     text-align: justify;
     padding: 10px;
-    font-family: 'Montserrat', regular,     sans-serif;
+    font-family: 'Montserrat', regular, sans-serif;
 }
 
 aside {
@@ -107,7 +97,7 @@ aside {
     border-radius: 10px;
     padding: 10px;
     text-align: right;
-    font-family: 'Montserrat', regular,     sans-serif;
+    font-family: 'Montserrat', regular, sans-serif;
 }
 
 aside ul {
@@ -221,7 +211,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    main {
+    .main1 {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -229,6 +219,16 @@ footer {
             "n"
             "ar"
             "as"
+            "f";
+    }
+
+    .main2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "h"
+            "n"
+            "ar"
             "f";
     }
 
