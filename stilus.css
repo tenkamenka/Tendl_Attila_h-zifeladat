@@ -177,6 +177,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    grid-template-areas: "e n"
+        "u u"
 }
 
 .email {
@@ -184,6 +186,7 @@ footer {
     border-radius: 10px;
     padding: 1px 5px;
     line-height: 0.5;
+    grid-area: e;
 }
 
 .nev {
@@ -191,19 +194,20 @@ footer {
     border-radius: 10px;
     padding: 1px 5px;
     line-height: 0.5;
+    grid-area: n;
 }
 
 .uzenet {
-    grid-column: 1 / 3;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 1px 5px 100px 5px;
     line-height: 0.5;
+    grid-area: u;
 }
 
 .kuldes {
-text-align: right;
-padding: 10px 0px 0px 0px;
+    text-align: right;
+    padding: 20px 0px 10px 0px;
 }
 
 @media screen and (max-width:600pX) {
@@ -224,5 +228,14 @@ padding: 10px 0px 0px 0px;
 
     .kepek {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kapcsolat {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "e"
+            "n"
+            "u"
     }
 }
